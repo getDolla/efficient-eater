@@ -1,18 +1,18 @@
-<table class="table table-bordered">
+<table class="table table-bordered" id="table">
     <tr>
-        <th>Restaurant</th>
-        <th>Item</th>
-        <th>Calories</th>
-        <th>Total Fat</th>
-        <th>Saturated Fat</th>
-        <th>Trans Fat</th>
-        <th>Cholesterol</th>
-        <th>Sodium</th>
-        <th>Carbs</th>
-        <th>Fiber</th>
-        <th>Sugar</th>
-        <th>Protein</th>
-        <th>Fl Oz</th>
+        <th onclick="sortTable(0)">Restaurant</th>
+        <th onclick="sortTable(1)">Item</th>
+        <th onclick="sortTable(2)">Calories</th>
+        <th onclick="sortTable(3)">Total Fat</th>
+        <th onclick="sortTable(4)">Saturated Fat</th>
+        <th onclick="sortTable(5)">Trans Fat</th>
+        <th onclick="sortTable(6)">Cholesterol</th>
+        <th onclick="sortTable(7)">Sodium</th>
+        <th onclick="sortTable(8)">Carbs</th>
+        <th onclick="sortTable(9)">Fiber</th>
+        <th onclick="sortTable(10)">Sugar</th>
+        <th onclick="sortTable(11)">Protein</th>
+        <th onclick="sortTable(12)">Fl Oz</th>
     </tr>
     {% for item in items %}
     <tr>

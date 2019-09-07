@@ -1,13 +1,13 @@
 {% load percentify %}
 {% load remove_trailing_zero %}
 {% load filter %}
-<table class="table table-striped">
+<table class="table table-striped" id="table">
     <tr>
-        <th>Restaurant</th>
-        <th>Item</th>
-        <th>Calories</th>
-        <th>Protein</th>
-        <th>Efficiency</th>
+        <th onclick="sortTable(0)">Restaurant</th>
+        <th onclick="sortTable(1)">Item</th>
+        <th onclick="sortTable(2)">Calories</th>
+        <th onclick="sortTable(3)">Protein</th>
+        <th onclick="sortTable(4)">Efficiency</th>
     </tr>
     {% for item in items %}
     <tr>
