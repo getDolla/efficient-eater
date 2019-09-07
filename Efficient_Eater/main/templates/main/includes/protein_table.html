@@ -1,0 +1,23 @@
+{% load percentify %}
+{% load remove_trailing_zero %}
+{% load filter %}
+<table class="table table-striped">
+    <tr>
+        <th>Restaurant</th>
+        <th>Item</th>
+        <th>Calories</th>
+        <th>Protein</th>
+        <th>Efficiency</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        {% filter capfirst %}
+        <td>{{item.restaurant}}</td>
+        <td>{{item.name}}</td>
+        {% endfilter %}
+        <td>{{item.calories}}</td>
+        <td>{{item.protein|remove_trailing_zero}}g</td>
+        <td>{{item.protein_efficiency|percentify}}%</td>
+    </tr>
+    {% endfor %}
+</table>

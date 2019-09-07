@@ -1,0 +1,34 @@
+<table class="table table-bordered">
+    <tr>
+        <th>Restaurant</th>
+        <th>Item</th>
+        <th>Calories</th>
+        <th>Total Fat</th>
+        <th>Saturated Fat</th>
+        <th>Trans Fat</th>
+        <th>Cholesterol</th>
+        <th>Sodium</th>
+        <th>Carbs</th>
+        <th>Fiber</th>
+        <th>Sugar</th>
+        <th>Protein</th>
+        <th>Fl Oz</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{item.restaurant}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.calories}}</td>
+        <td>{{item.total_fat}}g</td>
+        <td>{{item.sat_fat}}g</td>
+        <td>{{item.trans_fat}}g</td>
+        <td>{{item.cholesterol}}mg</td>
+        <td>{{item.sodium}}mg</td>
+        <td>{{item.carbs}}g</td>
+        <td>{{item.fiber}}g</td>
+        <td>{{item.sugar}}g</td>
+        <td>{{item.protein}}g</td>
+        <td>{{item.floz}}</td>
+    </tr>
+    {% endfor %}
+</table>
